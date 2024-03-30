@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Circle Area Calculator</title>
+</head>
+<body>
+
+<h2>Circle Area Calculator</h2>
+
+<script>
+function calculateArea(radius) {
+    return Math.PI * radius * radius;
+}
+
+function calculateAreaWithPrompt() {
+    var radius = parseFloat(prompt("Enter the radius of the circle:"));
+    return Math.PI * radius * radius;
+}
+function printArea(radius) {
+    var area = Math.PI * radius * radius;
+    console.log("The area of the circle is: " + area);
+}
+function printAreaWithPrompt() {
+    var radius = parseFloat(prompt("Enter the radius of the circle:"));
+    var area = Math.PI * radius * radius;
+    console.log("The area of the circle is: " + area);
+}
+var radius = 5;
+
+var area1 = calculateArea(radius);
+console.log("Area of circle with radius " + radius + " is: " + area1);
+
+var area2 = calculateAreaWithPrompt();
+console.log("Area of circle with radius entered by user is: " + area2);
+
+printArea(radius);
+printAreaWithPrompt();
+</script>
+
+</body>
+</html>

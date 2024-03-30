@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript If Statement </title>
+</head>
+<body>
+
+<p>Click the button to check if the number is greater than 10:</p>
+
+<input type="text" id="numberInput">
+<button onclick="checkNumber()">Check Number</button>
+
+<p id="result"></p>
+
+<script>
+function checkNumber() {
+    var number = parseInt(document.getElementById("numberInput").value);
+    if (number > 10) {
+        document.getElementById("result").innerHTML = "The number is greater than 10.";
+    } else {
+        document.getElementById("result").innerHTML = "The number is not greater than 10.";
+    }
+}
+</script>
+
+</body>
+</html>
